@@ -142,30 +142,6 @@ bool search_for_me(Node* head, int num){
     }
   }
 
-/*
-  //Mul
-  void mul(Node* head, Node* headB, int count, string output){
-    Node* temp = head;
-    Node* tempB = headB;
-    int col = sqrt(count);
-    ofstream ofile(output);
-    if(ofile.is_open()){
-    while(temp!=NULL){
-        for(int i = 0; i < col; i++){
-          if(i != col - 1){
-            ofile << (temp->value) * (tempB->value)<< ".0" << " ";
-          }
-          else{
-            ofile << (temp->value) * (tempB->value)<< ".0" << endl;
-          }
-          temp = temp->Next;
-          tempB = tempB->Next;
-        }
-      }
-      ofile.close();
-    }
-  }
-*/
 
   //tra
   void tra(Node* head, int count, string output, int x){
