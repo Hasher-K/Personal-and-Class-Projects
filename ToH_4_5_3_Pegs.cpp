@@ -9,11 +9,11 @@ void towerOfHanoi_3(int n, char from_rod, char to_rod, char mid_rod, string outp
   if (n == 0){
       return; 
   } 
-  towerOfHanoi_3(n - 1, from_rod, to_rod, mid_rod, output); 
+  towerOfHanoi_3(n - 1, from_rod,mid_rod, to_rod, output); 
   ofstream ofile;
   ofile.open(output, ios_base::app);
   ofile << n << " " << from_rod << " " << to_rod << endl; 
-  towerOfHanoi_3(n - 1, to_rod, mid_rod, from_rod, output); 
+  towerOfHanoi_3(n - 1, mid_rod, to_rod,from_rod, output); 
 } 
 
 void towerOfHanoi_4(int num, char from_rod, char to_rod, char mid_rod, char mid_rod2, string output){
